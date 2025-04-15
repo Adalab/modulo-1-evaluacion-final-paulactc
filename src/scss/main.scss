@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.imagebackground{
+  background-image: url(../images/cover.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  
+  
+  
+  
+  
+}
+
+.font-header{
+display:flex;
+flex-direction: column;
+align-items: center;
+padding-top:10em;
+height: 80%;
+justify-content: flex-end;
+
+
+}
+
+.font-header h1{
+  color: white;
+  font-size:2.625em ;
+  text-align: center;
+}
+
+.font-header p{
+  color: white;
+  font-size: 1em ;
+}
+
+.hamb{
+  background-color: blue;
+  padding:0.5em;
+  width:8%;
+  position:sticky;
+  top:0;
+  z-index: 1;
+}
+
+.scroll{
+  background-color: white;
+  padding: 0.3em;
+  border-radius: 50%;
+  margin-top: 1.5em;
+
+}
+
+.font-mod2{
+  padding: 0.8em;
+ width:100%;
+}
+
+.font-mod2 p{
+  font-size: 0.875em;
+  color: #8ccbea;
+  padding: 0.5em;
+  text-align:left;
+
+}
+
+.font-mod2 h2{
+  font-size:1.5em;
+  text-align:left;
+  padding: 0.5em;
+
+}
+
+.font-mod2 h6{
+  font-size:1.2em;
+  color: #4a4a4a;
+  text-align:left;
+  padding: 0.5em;
+
+}
+
+.go{
+  color:  #f26002;
+  border-radius : 45%;
+  border: 2px solid #f26002;
+  font-size: 1em;
+  padding-inline: 0.8em;
+  padding-block: 0.5em;
+  margin: 0.8em;
+
+}
+
+.mod-3{
+  color: #eff9ff;
+}
+
+
