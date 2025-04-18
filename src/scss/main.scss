@@ -5,6 +5,7 @@
   font-family: robotoslab;
 }
 
+ /*primer múdulo*/
 .imagebackground{
   background-image: url(../images/cover.jpeg);
   background-repeat: no-repeat;
@@ -43,8 +44,7 @@ justify-content: flex-end;
 .hamb{
   background-color: blue;
   padding:0.5em;
-  width:8%;
-  position:sticky;
+  position: fixed;
   top:0;
   z-index: 1;
 }
@@ -57,9 +57,16 @@ justify-content: flex-end;
 
 }
 
+/*segundo módulo*/
+
 .font-mod2{
   padding: 0.8em;
  width:100%;
+
+ @media (width >1024px){
+ padding-inline:15em;
+ }
+ 
 }
 
 .font-mod2 p{
@@ -95,6 +102,16 @@ justify-content: flex-end;
   margin: 0.8em;
   width: 16%;
 
+ &:hover {
+    background-color: rgb(58, 124, 179); 
+    transform:scale(2.1);
+}
+  @media (width > 768px) {
+    width: 76px;
+    padding: 0.3em;
+    height: 45px;
+  }
+
 }
 
 .section h2{
@@ -103,19 +120,39 @@ justify-content: flex-end;
   height: 80%;
   }
 
+  /*tercer módulo*/
+
 .mod-3{
  
   background-color:#e7f2f8;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 2.75em;
+  display:flex;
+  flex-direction:column;
+  gap: 15vw;
   place-items: center;
+  padding-block:2em;}
+
+  
+ 
+
+
+  .letter-mod3{
+
+    
+    @media (width>768px) {
+     display:grid;
+     grid-template-columns: repeat(3,1fr);
+  
+  }
   
 }
 .articles{
   /*padding-inline:4.68em;*/
   text-align: center;
+  padding-block:1.5em;
+
 }
+
+
 
 .articles h6 {
   color: black;
@@ -133,43 +170,93 @@ justify-content: flex-end;
 }
 
 .reason{
-  font-size: 1.5em;
-  width: 50%;
+  font-size: 1.25em;
+  width: 50vw;
   background-color: #f26002;
   border-radius:1.4em;
   color: white;
   border-color: #cee9e7;
-  /*margin: 0 auto;*/
-   padding:0.3em;
+  padding:0.4em;
+  
 
-}
-.footer1{
+  &:hover {
+    background-color: rgb(58, 124, 179); 
+    transform:rotate(10deg);
+    }
+    }
+
+   /*footer*/
+
+.footer{
+  position:relative;
+  padding-block:4.06em;
   display:flex;
-  flex-direction:columns;
   background-color: rgb(44, 44, 85);
   justify-content: center;
-}
-  
-  .footer1 section{
-   display:flex;
-   flex-direction: column;
+     flex-direction: column;
     gap: 1.5em;
+   
+    @media (width>768px) {
+      flex-direction:row;
+
+   
+   }
+
+   @media (width>1024x) {
+    flex-direction:row;
+    
+
+    
   }
+}
+
+
+footer img{
+  width: 2.5em;
+  background-color:white;
+  border-radius: 50%;
+  padding: 0.5em;
+  position:absolute;
+  top: -5%;
+  transform:translate(45vw,0);
+
+
   
-  .footer1 section ul{
+}
+
+  
+ 
+
+  
+  .footer  ul{
     list-style:none;
     display:flex;
     flex-direction: column;
     gap:0.5em;
     text-align: center;
 
-  .footer1 section p{
-     text-align: center;
+  
     }
+    
 
-  }
 
-.footer1 a{
+
+.footer a{
   color: white;
   text-decoration: none;
 }
+
+.footer div{
+  color: white;
+  text-align: center;
+
+  @media (width>768px) {
+    order:-1;
+ 
+ }
+
+
+
+}
+
+
